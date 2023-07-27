@@ -1,51 +1,58 @@
-*, *::after, *::before{
+@import url('register.css');
+
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  color: #fff;
 }
 
 body {
   box-sizing: border-box;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
 }
 
 .navigation {
   width: 100%;
-  background-color: #5c556a; /*rgb(87, 74, 98);*/
+  /*background-color: #5c556a; rgb(87, 74, 98);*/
   display: flex;
-  flex-direction: row;
-  align-content: baseline;
-  align-items: baseline;
-  padding:15px 40px;
+  height: 100px;
+  position: relative;
 }
 
 .logo{
-  height: 80px;
-  width: 20%;
-}
-.logo img{
   height: inherit;
+  width: 20%;
+  padding: 10px;
+}
+
+.logo img{
+  margin: 0;
+  height: 80px;
   border-radius: 25px;
+  width: auto;
 }
-
-.nav-list {
-  display: flex;
-width: 50%;  
-}
-
+/*
 .search{
   width: 30%;
   display: flex;
-  height: 40px;
   background-color: #fff;
-}
+  align-items: baseline;
+  height: inherit;
+}*/
 
 .icon{
   height: 40px;
   width: 40px;
   font-size: 40px;
-  background-color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  width: 80%;
+  padding: 30px;
+  left: 400px;
+  position: absolute;
 }
 
 .nav-list li {
@@ -57,18 +64,68 @@ width: 50%;
 
 .main_content {
   color: rgb(0, 0, 0);
+  background-image: url(/images/bg-home.jpg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
 }
 
 .main-head{
-  background-image: url(/images/bg-home.jpg);
   background-size: cover;
-  width: 100%;
-  height: 300px;
+  width: 50%;
+  height: 500px;
   margin: 0;
 }
 
-.footer {
-  padding-top: 30px;
-  background-color: rgb(177, 173, 164);
-  height: 150px;
+.main-message{
+  margin-top: 100px;
 }
+
+.message-details{
+  margin-top: 0px;
+  width: 80%;
+  text-align: center;
+}
+
+.message-details span{
+  box-sizing: border-box;
+  display: flex;
+  padding: 30px 0;
+}
+
+.message-details strong{
+  background: linear-gradient(
+    120deg,
+    #f4c117 20.69%,
+    #e64a8d 50.19%,
+    #3eacd8 79.69%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.motto{
+  padding: 30px 0;
+  font-size: 24px;
+  color: #c38ca5;
+}
+.message-title h1{
+  padding: 50px 0;
+  color: chocolate;
+}
+
+
+.footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer span{
+  padding-top: 10px;
+  background-color: rgb(177, 173, 164);
+  height: 50px;
+  color: rgb(87, 56, 116);
+}
+

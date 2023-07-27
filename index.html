@@ -3,59 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" >
     <title>E-Learning</title>
 </head>
 <body>
-    <div class="navigation">
-        <div class="logo">
-            <img src="/images/logo.png" class="logo-image" alt="">
-        </div>
-        <div class="search">
-            <input type="search" name="" id="">
-            <i class="fa-solid fa-magnifying-glass icon"></i>
-        </div>
-        <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="/pages/allcourses.html">Courses</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="/pages/signup.html">Get Started</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-    </div>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo"><img src="../images/logo.png" alt=""></h2>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </label>
+            <ul class="all-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="../resources/login.html">Login</a></li>
+                <li><a href="./pages/register.html" style="color: red; font-size: 20px;">Apply Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="main_content">
         <div class="main-head">
             <div class="main-message">
                 <div class="message-title">
                     <h1>Welcome to Alight Coding School</h1>
-                    <span>Meet your Destiny at Alight Coding School</span>
+                    <span class="motto">Meet your Destiny at Alight Coding School</span>
                 </div>
                 <div class="message-details">
-                    <span>We are ALIGHT</span>
+                    <span>We are commited to helping refugees and the host community to benefit
+                        from the use cutting edge technology through Software Development as 
+                        the bridge to exploring other Technologies.
+                    </span>
+                    <strong style="color: chocolate; font-size: 36px;">WE ARE ALIGHT</strong>
                 </div>
             </div>
         </div>
-        <div class="main_info">
-            <h2>ACS E-Learning</h2>
-            <span>Welcome to our plateform, we are honoured to be your instructor</span>
-        </div>
-        <div class="main_learnmore">
-            <span>Learn more</span>
-        </div>
     </div>
-    <div class="footer">
-        <div class="footer_contacts">
-            <span>Contact Us</span>
+
+    <footer>
+        <div>
+            <span>Copyright © 2023 All Rights Reserved</span>
+            <span class="link">
+                <a href="#">Home</a>
+                <a href="#contact">Contact</a>
+            </span>
         </div>
-        <div class="footer_links">
-            <ul>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        <div class="footer_end">
-            <span>Copyright &copy; 2023 | All Rights Reserved</span>
-            <span>Powerd by Alight Coding School</span>
-        </div>
+    </footer>
+    <!--
+        <div class="footer">
+        <span>Copyright &copy; 2023 | All Rights Reserved</span>
+        <span>Powerd by Alight Coding School</span>
     </div>
+    -->
 </body>
 </html>
