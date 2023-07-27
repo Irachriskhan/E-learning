@@ -3,7 +3,9 @@
 This is a project that will treat all students information in their learning
 journey. 
 
-The system will have three main users:
+**OBJECTIVES AND SCOPE**
+
+The system will have four main users:
     **- The students
     - The admin
     - The course manager
@@ -32,3 +34,13 @@ The teachers will:
 The admin will manage all the system by:
     - Setting permissions to users,
     - Add or remove the users
+
+    # **TOOLS and TECHNOLOGIES**
+
+    - HTML
+    - CSS
+    - JavaScript
+    - Node JS
+    - React JS
+    - MongoDB
+    - Git and Figma

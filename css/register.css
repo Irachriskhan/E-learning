@@ -11,7 +11,15 @@
 
 .head-title{
     text-align: center;
-    font-size: x-large;
+    font-size: 40px;
+    background: linear-gradient(
+    120deg,
+    #f4c117 20.69%,
+    #e64a8d 50.19%,
+    #3eacd8 79.69%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 img{
