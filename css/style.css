@@ -1,6 +1,6 @@
-@import url('register.css');
+@import url('login.css');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,18 +20,19 @@ body {
   position: relative;
 }
 
-.logo{
+.logo {
   height: inherit;
   width: 20%;
   padding: 10px;
 }
 
-.logo img{
+.logo img {
   margin: 0;
   height: 80px;
   border-radius: 25px;
   width: auto;
 }
+
 /*
 .search{
   width: 30%;
@@ -41,7 +42,7 @@ body {
   height: inherit;
 }*/
 
-.icon{
+.icon {
   height: 40px;
   width: 40px;
   font-size: 40px;
@@ -64,53 +65,52 @@ body {
 
 .main_content {
   color: rgb(0, 0, 0);
-  background-image: url(/images/bg-home.jpg);
+  background-image: url(../images/bg-home.jpg);
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding-left: 80px;
 }
 
-.main-head{
+.main-head {
   background-size: cover;
   width: 50%;
   height: 500px;
   margin: 0;
 }
 
-.main-message{
+.main-message {
   margin-top: 100px;
 }
 
-.message-details{
+.message-details {
   margin-top: 0px;
   width: 80%;
   text-align: center;
 }
 
-.message-details span{
+.message-details span {
   box-sizing: border-box;
   display: flex;
   padding: 30px 0;
 }
 
-.message-details strong{
-  background: linear-gradient(
-    120deg,
-    #f4c117 20.69%,
-    #e64a8d 50.19%,
-    #3eacd8 79.69%
-  );
+.message-details strong {
+  background: linear-gradient(120deg,
+      #f4c117 20.69%,
+      #e64a8d 50.19%,
+      #3eacd8 79.69%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.motto{
+.motto {
   padding: 30px 0;
   font-size: 24px;
   color: #c38ca5;
 }
-.message-title h1{
+
+.message-title h1 {
   padding: 50px 0;
   color: chocolate;
 }
@@ -122,10 +122,9 @@ body {
   flex-direction: column;
 }
 
-.footer span{
+.footer span {
   padding-top: 10px;
   background-color: rgb(177, 173, 164);
   height: 50px;
   color: rgb(87, 56, 116);
 }
-
