@@ -1,0 +1,62 @@
+@import url(style.css);
+
+.signupForm{
+    max-width: 1000px;
+    margin-left: 10%;
+    margin-right: 8%;
+    height: auto;
+}
+
+#field{
+    width: inherit;
+    border-radius: 15px;
+}
+
+.form_elemnts{
+    display: flex;
+    padding: 20px 50px;
+    max-width: 1000px;
+    /*background-color: rgba(100, 71, 97, 0.156);*/
+}
+
+.form_elemnts #one{
+    width: 40%; 
+}
+
+.form_elemnts #two{
+    margin-left: 100px;
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+.form_elemnts #two input{
+    border-radius: 3px;
+    width: inherit;
+    font-size: 1.4em;
+}
+
+.more_elements{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.star{
+    color: red;
+}
+ .formhead{
+    color: rgb(17, 3, 143);
+    font-size: 1.3em;
+ }
+
+ .apply_btn{
+    text-align: right;
+    padding-right: 50px;
+ }
+ .apply_btn input{
+    width: 200px;
+    height: 50px;
+    font-size: 2em;
+    border-radius: 10px;
+    border-left: 4px solid violet;
+    border-bottom: 3px solid rgb(172, 116, 13);
+}

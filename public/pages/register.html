@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Application Form</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo"><img src="../images/logo.png" alt=""></h2>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </label>
+            <ul class="all-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="../resources/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <section class="container">
+            <div class="head-title">Registration Form</div>
+            <form class="form"> <!--  name="submit-to-google-sheet" -->
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" name="Fullname" placeholder="Enter full name" required />
+                </div>
+
+                <div class="input-box">
+                    <label>Email Address</label>
+                    <input type="text" name="Email" placeholder="Enter email address" required />
+                </div>
+
+                <div class="column">
+                    <div class="input-box">
+                        <label>Phone Number</label>
+                        <input type="number" name="PhoneNumber" placeholder="Enter phone number" required />
+                    </div>
+                    <div class="input-box">
+                        <label>Birth Date</label>
+                        <input type="date" name="BirthDate" placeholder="Enter birth date" required />
+                    </div>
+                </div>
+                <div class="gender-box">
+                    <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="check-male" name="Gender" value="male" checked />
+                            <label for="check-male">Male</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-female" name="Gender" value="female" />
+                            <label for="check-female">Female</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-other" name="Gender" value="not to say" />
+                            <label for="check-other">prefer not to say</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-box address">
+                    <label>Address</label>
+                    <input type="text" name="Address" placeholder="Enter your home address" required />
+                    <div class="column">
+                        <div class="select-box">
+                            <select name="Origin Country">
+                                <option hidden>Country of Origin</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="DRC">DR Congo</option>
+                                <option value="Erithrea">Erithrea</option>
+                                <option value="Sudan">Sudan</option>
+                            </select>
+                        </div>
+                        <div class="select-box">
+                            <select name="Highest Degree">
+                                <option hidden>Your Highest Degree</option>
+                                <option value="Bachelors">Bachelor's Degree </option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="A2 Certificate">Certificate A2</option>
+                                <option value="Tronc Commun">Tronc Commun</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="select-box">
+                            <select name="Program">
+                                <option hidden>Select your programme</option>
+                                <option value="Front-End">Frontend Developer</option>
+                                <option value="Back-End">Backend Developer</option>
+                                <option value="FullStack">Fullstack Developer</option>
+                            </select>
+                        </div>
+                        <div class="select-box">
+                            <select name="Cohort">
+                                <option hidden> Select your cohort</option>
+                                <option value="November 2023">November 2023</option>
+                                <option value="April 2023">April 2023</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Upload your CV</label>
+                            <input type="file" placeholder="Upload your CV" required />
+                        </div>
+                        <div class="input-box">
+                            <label>Upload Motivation letter</label>
+                            <input type="file" placeholder="Motivation letter" required />
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Upload your Degree</label>
+                            <input type="file" placeholder="Upload your Degree" required />
+                        </div>
+                        <div class="input-box">
+                            <label>Upload your ID</label>
+                            <input type="file" placeholder="Upload your ID" required />
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+
+            <h1 id="msg"></h1>
+            <form id="form">
+                <input type="text" name="Fullname" id=""><br><br>
+                <input type="text" name="Email" id=""><br><br>
+                <textarea name="Message" id="" cols="30" rows="10"></textarea><br><br>
+                <input type="submit" id="submit">
+            </form>
+
+        </section>
+    </div>
+    <footer>
+        <div>
+            <span>Copyright © 2023 All Rights Reserved</span>
+            <span class="link">
+                <a href="#">Home</a>
+                <a href="#contact">Contact</a>
+            </span>
+        </div>
+    </footer>
+
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzO1HdlOKY-7S950aB_25s83khhoOVqDdTtlWXJB0xyG8FocM1XibFgKZIAiPqCU0Y/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script> -->
+    <script src="../script/index.js"></script>
+</body>
+
+</html>

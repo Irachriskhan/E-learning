@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signup.css">
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="head">
+        <img src="" class="logo" alt="">
+        <span id="title">ACS E-Learning Plateform</span>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="allcourses.html">Courses</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Get Started</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+    <form class="signupForm" action="">
+        <fieldset id="field">
+            <legend><span class="formhead">Fill in this Application form to learn Software Development Course</span></legend>
+            <div class="form_elemnts">
+                <div id="one"><label for="firstname">What is your first name?<span class="star">*</span></label></div>
+                <div id="two"><input type="text" name="fna" id="firstname" maxlength="30" required class="alltxt"></div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="lastna">What is your last name?<span class="star">*</span></label></div>
+                <div id="two"><input type="text" name="lna" id="lastna" maxlength="30" required class="alltxt"></div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="gender">Select your gender:<span class="star">*</span></label></div>
+                <div id="two">
+                    <select name="gender" id="gender">
+                        <option value="">--select an item--</option>
+                        <option value="female">Female</option>
+                        <option value="female">Male</option>
+                        <option value="female">Prefer not to say</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="dob">What is your date of birth?<span class="star">*</span></label></div>
+                <div id="two"><input type="date" name="dob" id="dob"></div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="phone">What is your phone number?<span class="star">*</span></label></div>
+                <div id="two"><input type="tel" name="phone" id="phone"></div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="userna">What is your email address?<span class="star">*</span></label></div>
+                <div id="two"><input type="email" name="user" id="userna" required class="alltxt"></div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="course">What programme are you interested in?<span class="star">*</span></label></div>
+                <div id="two">
+                    <select name="course" id="course">
+                        <option value="">--select an item--</option>
+                        <option value="">Frontend Developer</option>
+                        <option value="">Backend Developer</option>
+                        <option value="">Fullstack Developer</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="joinus">Select when you would like to join us<span class="star">*</span></label></div>
+                <div id="two"><select name="joinus" id="joinus">
+                        <option value="">--select an item--</option>
+                        <option value="">September 2023</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="country">What is your country of origin?<span class="star">*</span></label></div>
+                <div id="two"><select name="country" id="country">
+                        <option value="">--select an item--</option>
+                        <option value="bur">Burundi</option>
+                        <option value="rwa">Rwanda</option>
+                        <option value="cgo">DRC</option>
+                        <option value="tz">Tanzania</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="topdegree">What is your highest degree?<span class="star">*</span></label></div>
+                <div id="two">
+                    <select name="topdegree" id="topdegree">
+                        <option value="">--select an item--</option>
+                        <option value="def">Bachelor's Degree </option>
+                        <option value="rwa">Diploma</option>
+                        <option value="bur">Certificate A2</option>
+                        <option value="cgo">Tronc Commun</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="motivation">Upload your Motivation letter here:<span class="star">*</span></label></div>
+                <div id="two"><input type="file" name="motivation" id="motivation" required class="alltxt"></div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="cv">Upload your updated CV here:<span class="star">*</span></label></div>
+                <div id="two"><input type="file" name="cv" id="cv" class="alltxt"></div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="natid">Upload your ID here<span class="star">*</span> </label></div>
+                <div id="two"><input type="file" name="natid" id="natid" class="alltxt"></div>
+            </div>
+            <div class="form_elemnts">
+                <div id="one"><label for="degree">Upload your Degree/Certificate here<span class="star">*</span> </label></div>
+                <div id="two"><input type="file" name="degree" id="degree" class="alltxt"></div>
+            </div>
+            <div class="more_elements">
+                <div class="moreone">
+                    We care about your personal data. For more information, please consult our
+                    <a href="#" target="_blank">Privacy Policy</a>.
+                </div>
+            </div>
+            <div class="more_elements">
+                <div class="moreone">
+                    <input type="checkbox" name="" id="">
+                    <label for="">I have Read and Agree to the <a href="http://" target="_blank">Privacy
+                            Policy</a>.<span class="star">*</span></label>
+                </div>
+            </div>
+            </div>
+            <div class="more_elements">
+                <div class="moreone">
+                    Stay connected with ACS and be the first to know about upcoming events, news, and special
+                    offers?
+                </div>
+            </div>
+            <div class="more_elements">
+                <div class="moreone">
+                    <input type="radio" name="ego" id="">
+                    <label for="ego">Yes, I want to receive ACS's latest news and offers.</label>
+                </div>
+            </div>
+            <div class="more_elements">
+                <div class="moreone">
+                    <input type="radio" name="ego" id="">
+                    <label for="ego">No, I do not want to benefit from ACS's latest news and offers.</label>
+                </div>
+            </div>
+            <div class="more_elements">
+                <div class="moreone">
+                    <span class="star">*</span> required
+                </div>
+            </div>
+            <div class="more_elements">
+                <div class="apply_btn">
+                    <input type="submit" value="Apply">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <div class="footer">
+        <div class="footer_contacts">
+            <span>Contact Us</span>
+        </div>
+        <div class="footer_links">
+            <ul>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="footer_end">
+            <span>Copyright &copy; 2023 | All Rights Reserved</span>
+            <span>Powerd by Alight Coding School</span>
+        </div>
+    </div>
+    
+</body>
+
+</html>
